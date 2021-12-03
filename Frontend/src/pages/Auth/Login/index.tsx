@@ -2,6 +2,7 @@
 import { useForm } from 'react-hook-form';
 import ButtonIcon from '../../../components/ButtonIcon';
 import Navbar from '../../../components/Navbar';
+import { requestBackendLogin } from '../../../util/requests';
 import './styles.css';
 
 type FormData = {
@@ -13,9 +14,15 @@ const Login = () => {
 
     const { register, handleSubmit } = useForm<FormData>();
 
-    const onSubmit = (formData: FormData) => {
-        console.log(formData);
-    }
+    const onSubmit = (formData : FormData) => {
+        requestBackendLogin(formData)
+        .then((response) => {
+            console.log("SUCESSO" , response);
+        })
+        .catch((error) => {
+            console.log("ERRO" , error);
+        });  
+    };
     return(
         <>
         <Navbar />
@@ -34,7 +41,7 @@ const Login = () => {
                     <div className="mb-2">
                         <input
                         {...register("password")}
-                        type="text"
+                        type="password"
                         className="form-control base-input"
                         placeholder="Senha"
                         name="password"
