@@ -1,0 +1,18 @@
+.button-card {
+  width: 264px;
+  height: 50px;
+  background: #ffc700;
+  border-radius: 4px;
+  margin-left: 18px;
+  margin-top: 54px;
+}
+
+.button-card h4 {
+  padding-left: 50px;
+  margin-top: 5px;
+  font-size: 20px;
+  line-height: 27px;
+  display: flex;
+  letter-spacing: -0.015em;
+  color: #000000;
+}

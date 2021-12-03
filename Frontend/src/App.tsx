@@ -1,9 +1,10 @@
-
+import './assets/styles/custom.scss';
 import './App.css';
+import Login from './pages/Auth/Login';
 
 function App() {
   return (
-    <h1>Desafio Movieflix</h1>
+    <Login />
   );
 }
 export default App;
