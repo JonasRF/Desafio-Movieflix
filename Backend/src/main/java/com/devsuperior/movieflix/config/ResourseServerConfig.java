@@ -47,7 +47,7 @@ public class ResourseServerConfig extends ResourceServerConfigurerAdapter {
 		.antMatchers(PUBLIC).permitAll()		
 		.anyRequest().authenticated();	
 	}
-	
+	////////////////////////////CORS POLICY////////////////////////////
 	@Bean
 	public CorsConfigurationSource corsConfigurationSource() {
 	    CorsConfiguration corsConfig = new CorsConfiguration();
