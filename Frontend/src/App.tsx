@@ -1,10 +1,10 @@
 import './assets/styles/custom.scss';
 import './App.css';
-import Login from './pages/Auth/Login';
+import Movie from './pages/Movie';
 
 function App() {
   return (
-    <Login />
+   <Movie />
   );
 }
 export default App;
