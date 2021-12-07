@@ -1,10 +1,10 @@
 import './assets/styles/custom.scss';
 import './App.css';
-import Movie from './pages/Movie';
+import Routes from './Routes';
 
 function App() {
   return (
-   <Movie />
+   <Routes />
   );
 }
 export default App;

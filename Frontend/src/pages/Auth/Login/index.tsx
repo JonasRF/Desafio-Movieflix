@@ -1,8 +1,8 @@
 
 import { useForm } from 'react-hook-form';
 import ButtonIcon from '../../../components/ButtonIcon';
-import Navbar from '../../../components/Navbar';
 import { requestBackendLogin } from '../../../util/requests';
+import { saveAuthData } from '../../../util/storage';
 import './styles.css';
 
 type FormData = {
@@ -17,6 +17,7 @@ const Login = () => {
     const onSubmit = (formData : FormData) => {
         requestBackendLogin(formData)
         .then((response) => {
+            saveAuthData(response.data);
             console.log("SUCESSO" , response);
         })
         .catch((error) => {
@@ -25,7 +26,6 @@ const Login = () => {
     };
     return(
         <>
-        <Navbar />
             <div className="base-card login-card">
                 <h1>LOGIN</h1>
                 <form onSubmit={handleSubmit(onSubmit)}>

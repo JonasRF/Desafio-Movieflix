@@ -4,10 +4,35 @@
   background: #ffc700;
 }
 
-.nav-container h1 {
-  font-size: 24px;
-  line-height: 33px;
+.LinkLogin {
+ width: auto;
+  position: absolute;
+  font-size: 50px;
+  line-height: 20px;
   letter-spacing: -0.015em;
   color: #000000;
-  margin-left: 18px;
+  margin-bottom: 5px;
+}
+
+.nav-button-logout {
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 10px;
+  margin-left: 210px;
+  padding-left: 30px;
+  margin-right: 50px;
+  padding-right: 30px;
+  padding-top: 5px;
+  padding-bottom: 8px;
+}
+
+.nav-button-logout h6 {
+  font-size: 14px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.015em;
+  color: #000000;
+  mix-blend-mode: normal;
 }
