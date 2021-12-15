@@ -1,0 +1,34 @@
+.base-card-font h5 {
+  display: flex;
+width: 50px;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: -0.015em;
+  color: #ffffff;
+  mix-blend-mode: normal;
+  margin-left: 45px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-top: 17px;
+}
+.base-image-name {
+    position: absolute;
+   width: 12.95px;
+   margin-left: 16px;
+   padding-top: 8px;
+}
+
+.base-card-container {
+  width: 280px;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: justify;
+  letter-spacing: -0.015em;
+  color: #9e9e9e;
+  border: 1px solid #e1e1e1;
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin-left: 10px;
+  padding-left: 12px;
+  padding-top: 10px;
+}

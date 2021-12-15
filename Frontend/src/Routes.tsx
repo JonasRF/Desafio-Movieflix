@@ -1,9 +1,9 @@
-import { Router, Switch, Route } from "react-router-dom";
+import { Router, Switch, Route} from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Login from "./pages/Auth/Login";
-import Movie from "./pages/Movie";
+import Movies from "./pages/Movies";
+import MovieDetails from "./pages/MovieDetails";
 import history from "./util/history";
-
 
 const Routes = () => {
     return(
@@ -14,7 +14,10 @@ const Routes = () => {
             <Login />
           </Route>
           <Route path="/movies" exact>
-            <Movie />
+            <Movies />
+          </Route>
+          <Route path="/movies/:movieId" >
+            <MovieDetails />
           </Route>
         </Switch>
       </Router>

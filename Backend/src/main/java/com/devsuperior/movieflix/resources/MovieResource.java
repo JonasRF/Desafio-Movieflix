@@ -28,7 +28,6 @@ public class MovieResource {
 	@Autowired
 	private ReviewService reviewService;
 	
-	
 	@GetMapping(value = "/{id}")
 	public ResponseEntity<MovieDTO> findById(@PathVariable Long id){
 		MovieDTO dto = service.findById(id);

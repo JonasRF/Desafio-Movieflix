@@ -111,6 +111,9 @@ public class Movie implements Serializable {
 		return reviews;
 	}
 
+	public void setReviews(List<Review> reviews) {
+		this.reviews = reviews;
+	}
 
 	@Override
 	public int hashCode() {
