@@ -1,11 +1,10 @@
-import { Movie } from "./movie";
-import { User } from "./user";
+
 
 export type Review =  {
     id: number;
     text: string;
-    movieId: Movie;
-    user: User;
+    movieId: number
+    user: number;  
   }
 
   

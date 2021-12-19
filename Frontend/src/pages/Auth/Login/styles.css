@@ -15,3 +15,17 @@
   padding-bottom: 40px;
 }
 
+.alert-danger{
+  color:#ffffff;
+  text-align: center;
+}
+
+.invalid-feedback{
+  padding-left: 20px;
+}
+
+.button-login{
+  margin-left: 8px;
+  padding-right: 15px;
+  margin-top: 50px;
+}

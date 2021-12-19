@@ -7,6 +7,7 @@ import javax.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -24,9 +25,9 @@ public class ReviewResource {
 	private ReviewService service;
 	
 	@PreAuthorize("hasAnyRole('MEMBER')")
-	@PostMapping
-	public ResponseEntity<ReviewDTO> insert(@Valid @RequestBody ReviewDTO dto) {
-		dto = service.insert(dto);
+	@PostMapping(value = "/{id}")
+	public ResponseEntity<ReviewDTO> insert(@Valid @RequestBody ReviewDTO dto, @PathVariable Long id) {
+		dto = service.insert(dto, id);
 		URI uri = ServletUriComponentsBuilder.fromCurrentRequest().path("/{id}").buildAndExpand(dto.getId()).toUri();
 		return ResponseEntity.created(uri).body(dto);
 	}

@@ -3,8 +3,10 @@ import { useEffect, useState } from 'react';
 import { useParams } from "react-router-dom";
 import MovieReviews from '../../components/MovieReviews';
 import { Movie } from '../../types/movie';
+import { hasAnyRoles } from '../../util/auth';
 import { requestBackend } from '../../util/requests';
 import './styles.css';
+import Form from '../../components/FormReviews';
 
 type UrlParams = {
   movieId: string;
@@ -27,10 +29,13 @@ const MovieDetails = () => {
   }, [movieId]);
   
   return (
-    <div className="movie-details-container" key={movie?.id}>
+    <div className="movie-details-container">
       <p>Tela detalhes do filme</p>
       <p>Id:{movie?.id}</p>
-      <div key={movie?.id}><MovieReviews /></div>
+      {hasAnyRoles(['ROLE_MEMBER']) && (
+      <p><Form /></p>
+      )}
+      <MovieReviews />
      </div>
   );
 };

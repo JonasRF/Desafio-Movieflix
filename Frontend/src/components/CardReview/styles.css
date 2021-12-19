@@ -1,6 +1,6 @@
 .base-card-font h5 {
   display: flex;
-width: 50px;
+  width: 50px;
   font-size: 16px;
   line-height: 22px;
   letter-spacing: -0.015em;
@@ -12,10 +12,10 @@ width: 50px;
   padding-top: 17px;
 }
 .base-image-name {
-    position: absolute;
-   width: 12.95px;
-   margin-left: 16px;
-   padding-top: 8px;
+  position: absolute;
+  width: 12.95px;
+  margin-left: 16px;
+  padding-top: 8px;
 }
 
 .base-card-container {
@@ -29,6 +29,10 @@ width: 50px;
   box-sizing: border-box;
   border-radius: 4px;
   margin-left: 10px;
-  padding-left: 12px;
+  padding-left: 10px;
   padding-top: 10px;
+}
+
+.base-card-container p {
+  margin-right: 26px;
 }

@@ -1,4 +1,5 @@
 
+import { Role } from "../util/auth";
 import { Review } from "./review";
 
 export type User = {
@@ -6,4 +7,5 @@ export type User = {
     name: string;
     email: string;
     reviews: Review[];
+    roles: Role[];
 }

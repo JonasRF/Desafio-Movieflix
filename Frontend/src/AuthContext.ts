@@ -17,3 +17,4 @@ export const AuthContext = createContext<AuthContextType>({
     },
     setAuthContextData: () => null,
 });
+

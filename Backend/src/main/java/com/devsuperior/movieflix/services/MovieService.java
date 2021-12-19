@@ -30,7 +30,6 @@ public class MovieService {
 	private GenreRepository genreRepository;
 	
 
-	
 	@Transactional(readOnly = true)
 	public MovieDTO findById(Long id) {
 		Optional<Movie> obj = repository.findById(id);
