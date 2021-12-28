@@ -9,7 +9,7 @@
   }
   
   .button-card h4 {
-    padding-left: 35px;
+    padding-left: 0;
     margin-top: 5px;
     font-size: 20px;
     line-height: 27px;
@@ -18,3 +18,32 @@
     color: #000000;
   }
   
+  @media(min-width: 576px){
+    .button-card {
+      width: 535px;
+    }
+  }
+  
+  @media(min-width: 768px){
+    .button-card {
+      width: 350px;
+      padding-left: 10px;
+      margin-left: 190px;
+    }
+  }
+
+  @media(min-width: 992px){
+    .button-card {
+      width: 350px;
+      padding-left: 10px;
+      margin-left: 320px;
+    }
+  }
+
+  @media(min-width: 1200px){
+    .button-card {
+      width: 350px;
+      padding-left: 10px;
+      margin-left: 420px;
+    }
+  }

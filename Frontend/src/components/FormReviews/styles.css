@@ -1,18 +1,63 @@
-
 .base-input-form {
-    width: 280px;
-    height: 50px;
-    background: #FFFFFF;
-border: 1px solid #E1E1E1;
-box-sizing: border-box;
-border-radius: 4px;
-margin-left: 9px;
-margin-bottom: 30px;
-
-
+  width: 280px;
+  height: 50px;
+  background: #ffffff;
+  border: 1px solid #e1e1e1;
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin-left: 9px;
+  margin-bottom: 10px;
 }
 
 .base-card-form {
-    padding-top: 20px;
-   
+  padding-top: 20px;
+}
+
+.base-card-invalid-feedback {
+  padding-top: 0;
+  margin-bottom: 20px;
+  font-size: 18px;
+  padding-left: 12px;
+}
+
+@media(min-width: 576px){
+    .base-card-form {
+        width: 555px;
+      }
+
+      .base-input-form {
+        width: 535px;
+      }   
+}
+
+@media(min-width: 768px){
+    .base-card-form {
+        width: 747px;
+      }
+
+      .base-input-form {
+        width: 728px ;
+      }   
+}
+
+@media(min-width: 992px){
+    .base-card-form {
+        width: auto;
+        margin-right: 15px;
+      }
+
+      .base-input-form {
+        width: 930px;
+      }   
+}
+
+@media(min-width: 1200px){
+    .base-card-form {
+        width: auto;
+        margin-right: 15px;
+      }
+
+      .base-input-form {
+        width: 1155px;
+      }   
 }

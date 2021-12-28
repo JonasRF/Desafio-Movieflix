@@ -1,0 +1,22 @@
+.base-card-movie-reviews {
+    margin-top: 29px;
+}
+
+@media(min-width: 576px){
+    .base-card-movie-reviews {
+        width: 555px;
+    }
+}
+
+@media(min-width: 768px){
+    .base-card-movie-reviews {
+        width: 747px;
+    }
+}
+
+@media(min-width: 992px){
+    .base-card-movie-reviews {
+        width: auto;
+        margin-right: 15px;
+    }
+}

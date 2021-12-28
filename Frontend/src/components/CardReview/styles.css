@@ -36,3 +36,28 @@
 .base-card-container p {
   margin-right: 26px;
 }
+
+@media(min-width: 576px){
+  .base-card-container {
+    width: 535px;
+  }
+} 
+
+@media(min-width: 768px){
+  .base-card-container {
+    width: 727px;
+  }
+} 
+
+@media(min-width: 992px){
+  .base-card-container {
+    width: 930px;
+  }
+} 
+
+@media(min-width: 1200px){
+  .base-card-container {
+    width: 1152px;
+  }
+} 
+

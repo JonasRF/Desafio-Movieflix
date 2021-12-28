@@ -18,7 +18,7 @@
   border: 1px solid #000000;
   box-sizing: border-box;
   border-radius: 10px;
-  margin-left: 210px;
+  margin-left: 202px;
   padding-left: 30px;
   margin-right: 50px;
   padding-right: 30px;
@@ -35,4 +35,28 @@
   letter-spacing: -0.015em;
   color: #000000;
   mix-blend-mode: normal;
+}
+
+@media(min-width: 576px){
+  .nav-button-logout {
+    margin-left: 450px;
+  }  
+}
+
+@media(min-width: 768px){
+  .nav-button-logout {
+    margin-left: 640px;
+  }  
+}
+
+@media(min-width: 992px){
+  .nav-button-logout {
+    margin-left: 855px;
+  }  
+}
+
+@media(min-width: 1200px){
+  .nav-button-logout {
+    margin-left: 1060px;
+  }  
 }
