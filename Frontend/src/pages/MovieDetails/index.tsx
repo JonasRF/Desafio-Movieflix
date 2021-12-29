@@ -1,7 +1,6 @@
 import { AxiosRequestConfig } from 'axios';
 import { useEffect, useState } from 'react';
 import { useParams } from "react-router-dom";
-
 import MovieReviews from '../../components/MovieReviews';
 import { Movie } from '../../types/movie';
 
@@ -30,8 +29,15 @@ const MovieDetails = () => {
   
   return (
     <div className="movie-details-container" key={movie?.id}>
-      <p>Tela detalhes do filme</p>
-      <p>Id:{movie?.id}</p>
+      <div className="base-card card-movie-details">
+        <img src={movie?.imgUrl} alt={movie?.title} />
+        <div>
+        <h4 className="card-movie-details-title">{movie?.title}</h4>
+        <h4 className="card-movie-details-year">{movie?.year}</h4>
+        <h4 className="card-movie-details-subtitle">{movie?.subTitle}</h4>
+      </div>
+      <div className="card-movie-details-synopsis">{movie?.synopsis}</div>
+      </div>
       <MovieReviews />
      </div>
   );

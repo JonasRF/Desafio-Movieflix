@@ -1,5 +1,7 @@
 .base-card-movie-reviews {
     margin-top: 29px;
+    margin-bottom: 20px;
+
 }
 
 @media(min-width: 576px){

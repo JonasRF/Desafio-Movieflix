@@ -8,6 +8,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.Ordered;
 import org.springframework.core.env.Environment;
+import org.springframework.http.HttpMethod;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.oauth2.config.annotation.web.configuration.EnableResourceServer;
 import org.springframework.security.oauth2.config.annotation.web.configuration.ResourceServerConfigurerAdapter;
@@ -30,6 +31,9 @@ public class ResourseServerConfig extends ResourceServerConfigurerAdapter {
 	
 	private static final String[] PUBLIC = { "/oauth/token", "/h2-console/**" };
 	
+	private static final String[] MEMBER = { "/reviews/**" };
+
+	
 	@Override
 	public void configure(ResourceServerSecurityConfigurer resources) throws Exception {
 		resources.tokenStore(tokenStore);
@@ -44,7 +48,9 @@ public class ResourseServerConfig extends ResourceServerConfigurerAdapter {
 		}
 		
 		http.authorizeRequests()
-		.antMatchers(PUBLIC).permitAll()		
+		.antMatchers(PUBLIC).permitAll()
+		.antMatchers(HttpMethod.POST, MEMBER).hasRole("MEMBER")
+		.antMatchers(MEMBER).hasRole("MEMBER")
 		.anyRequest().authenticated();	
 	}
 	////////////////////////////CORS POLICY////////////////////////////
