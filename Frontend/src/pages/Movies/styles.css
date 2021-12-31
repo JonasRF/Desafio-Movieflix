@@ -1,3 +1,16 @@
+.container {
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.row {
+  margin-right: 0;
+  --bs-gutter-x: 0;
+  --bs-gutter-y: 0;
+}
+
 .container-movie h1 {
   font-size: 24px;
   line-height: 33px;
@@ -5,15 +18,15 @@
   color: #ffffff;
   mix-blend-mode: normal;
   padding-top: 12px;
-  margin-left: 15px;
+  margin-left: 10px;
   margin-bottom: 49px;
 }
 
-.link-details-movie{
-    font-size: 18px;
-line-height: 25px;
-letter-spacing: -0.015em;
-color: #FFFFFF;
-mix-blend-mode: normal;
-margin-left: 18px;
+.link-details-movie {
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: -0.015em;
+  color: #ffffff;
+  mix-blend-mode: normal;
+  margin-left: 18px;
 }
