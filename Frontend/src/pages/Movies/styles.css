@@ -30,3 +30,18 @@
   mix-blend-mode: normal;
   margin-left: 18px;
 }
+
+@media (min-width: 576px) {
+  .link-details-movie {
+    width: 600px;
+    padding-right: 40px;
+  }
+}
+
+@media (min-width: 768px) {
+  .link-details-movie {
+    width: 740px;
+    padding-left: 20px;
+    padding-right: 10px;
+  }
+}

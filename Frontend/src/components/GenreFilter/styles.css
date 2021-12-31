@@ -1,0 +1,51 @@
+.base-card-movie-select-filter {
+  width: 290px;
+  height: 60px;
+  margin-left: 18px;
+  margin-right: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 25px;
+}
+
+.movie-filter-genre-container {
+  padding-top: 5px;
+}
+
+.movie-filter-select__control {
+  height: 50px;
+  background-color: #6c6c6c !important;
+  color: #fff;
+}
+
+.movie-filter-select__placeholder {
+  color: #fff !important;
+}
+
+.movie-filter-select__single-value {
+  color: #fff !important;
+}
+
+.movie-filter-select__indicator-separator {
+    display: none;
+}
+
+.movie-filter-select__clear-indicator {
+    color: #fff !important;
+}
+
+@media (min-width: 576px) {
+  .base-card-movie-select-filter {
+    width: 536px;
+    margin-left: 18px;
+    padding-right: 250px;
+  }
+}
+
+@media (min-width: 768px) {
+  .base-card-movie-select-filter {
+    width: auto;
+    margin-left: 38px;
+    padding-right: 394px;
+  }
+}

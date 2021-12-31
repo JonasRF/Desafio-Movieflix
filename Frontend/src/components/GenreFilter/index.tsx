@@ -9,13 +9,24 @@ export type MovieFilterData = {
   genre: Genre | null;
 };
 
-const GenreFilter = () => {
+type Props = {
+  onSelectFilter : (data: MovieFilterData) => void;
+}
+
+const GenreFilter = ( { onSelectFilter } : Props) => {
+
   const [selectGenre, setSelectGenries] = useState<Genre[]>([]);
 
   const { setValue, getValues, control } = useForm<MovieFilterData>();
 
   const handleChangeGenre = (value: Genre) => {
     setValue('genre', value);
+
+    const obj : MovieFilterData = {
+      genre: getValues('genre')
+    }
+
+    onSelectFilter(obj);
     console.log(getValues('genre'))
   };
 
@@ -27,7 +38,7 @@ const GenreFilter = () => {
   }, []);
 
   return (
-    <div className="base-card">
+    <div className="base-card base-card-movie-select-filter">
       <form>
         <div className="movie-filter-genre-container">
           <Controller

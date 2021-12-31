@@ -1,9 +1,7 @@
-
 .card-movie-list {
   width: 290px;
   margin-bottom: 20px;
   padding-right: 20px;
- 
 }
 
 .card-movie-list img {
@@ -38,4 +36,25 @@
   color: #ffffff;
   mix-blend-mode: normal;
   margin-left: 20px;
+}
+
+@media (min-width: 576px) {
+  .card-movie-list {
+    width: 258px;
+  }
+
+  .card-movie-list img {
+    width: 258px;
+  }
+}
+
+@media (min-width: 768px) {
+  .card-movie-list {
+    width: 318px;
+    margin-bottom: 40px;
+  }
+
+  .card-movie-list img {
+    width: 318px;
+  }
 }
