@@ -60,7 +60,7 @@ const Movies = () => {
         <GenreFilter onSelectFilter={handleSelectFilter}/>
         <div className="row link-details-movie">
           {page?.content.map((movie) => (
-            <div className="col-sm-6 col-lg-4 col-xl-3" key={movie.id}>
+            <div className="col-sm-6 col-lg-6 col-xl-3" key={movie.id}>
               <Link to={{ pathname: `/movies/${movie.id}/` }}>
                 <MovieList movie={movie} />
               </Link>

@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 import { Review } from "../../types/review";
 import { requestBackend } from "../../util/requests";
 import ButtonReview from "../ButtonReview";
+import { toast } from 'react-toastify';
 
 import './styles.css';
 
@@ -31,9 +32,13 @@ const FormReviews = ( { onSubmitForm } : Props) => {
     };
      requestBackend(config)
       .then((response) => {
-      console.log(response.data);
+        toast.info('Avaliação do filme cadastrada com sucesso!');
         onSubmitForm(response.data)
       })
+      .catch(() => {
+        toast.error('Erro ao ao cadastrar avaliação do fime!');
+      })
+      ;
     }   
     
      return( 

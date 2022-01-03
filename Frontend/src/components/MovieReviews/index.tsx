@@ -44,7 +44,6 @@ const MovieReviews = () => {
     };
     requestBackend(params).then((response) => {
       setReview(response.data);
-      console.log('Array', response.data);
     });
    },[movieId]);
 

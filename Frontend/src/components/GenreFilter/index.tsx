@@ -27,7 +27,6 @@ const GenreFilter = ( { onSelectFilter } : Props) => {
     }
 
     onSelectFilter(obj);
-    console.log(getValues('genre'))
   };
 
   useEffect(() => {

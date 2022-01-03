@@ -39,25 +39,31 @@
 
 @media(min-width: 576px){
   .base-card-container {
-    width: 535px;
+    width: 515px;
   }
 } 
 
 @media(min-width: 768px){
   .base-card-container {
-    width: 727px;
+    width: 608px;
   }
 } 
 
 @media(min-width: 992px){
   .base-card-container {
-    width: 930px;
+    width: 832px;
   }
 } 
 
 @media(min-width: 1200px){
   .base-card-container {
-    width: 1152px;
+    width: 1040px;
+  }
+} 
+
+@media(min-width: 1400px){
+  .base-card-container {
+    width: 1040px;
   }
 } 
 

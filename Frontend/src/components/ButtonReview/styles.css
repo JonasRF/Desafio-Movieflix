@@ -20,15 +20,15 @@
   
   @media(min-width: 576px){
     .button-card {
-      width: 535px;
+      width: 496px;
+      margin-left: 20px;
     }
   }
   
   @media(min-width: 768px){
     .button-card {
-      width: 350px;
-      padding-left: 10px;
-      margin-left: 190px;
+      width: 604px;
+      margin-left: 40px;
     }
   }
 
@@ -36,7 +36,7 @@
     .button-card {
       width: 350px;
       padding-left: 10px;
-      margin-left: 320px;
+      margin-left: 285px;
     }
   }
 

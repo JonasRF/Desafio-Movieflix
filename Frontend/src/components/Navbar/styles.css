@@ -5,7 +5,7 @@
 }
 
 .LinkLogin {
- width: auto;
+  width: auto;
   position: absolute;
   font-size: 50px;
   line-height: 20px;
@@ -37,26 +37,26 @@
   mix-blend-mode: normal;
 }
 
-@media(min-width: 576px){
+@media (min-width: 576px) {
   .nav-button-logout {
-    margin-left: 450px;
-  }  
+    margin-left: 435px;
+  }
 }
 
-@media(min-width: 768px){
+@media (min-width: 768px) {
   .nav-button-logout {
-    margin-left: 640px;
-  }  
+    margin-left: 624px;
+  }
 }
 
-@media(min-width: 992px){
+@media (min-width: 992px) {
   .nav-button-logout {
     margin-left: 855px;
-  }  
+  }
 }
 
-@media(min-width: 1200px){
+@media (min-width: 1200px) {
   .nav-button-logout {
     margin-left: 1060px;
-  }  
+  }
 }

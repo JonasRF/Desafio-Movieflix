@@ -45,3 +45,32 @@
     padding-right: 10px;
   }
 }
+
+@media (min-width: 992px) {
+  .link-details-movie {
+    width: 960px;
+    padding-left: 10px;
+    margin-left: 25px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .link-details-movie {
+    width: 1200px;
+    padding-left: 10px;
+    padding-right: 50px;
+  }
+}
+
+@media (min-width: 1400px) {
+
+  .container-movie {
+  padding-left: 70px;
+  }
+
+  .link-details-movie {
+    width: 1228px;
+    padding-left: 54px;
+    padding-right: 23px;
+  }
+}

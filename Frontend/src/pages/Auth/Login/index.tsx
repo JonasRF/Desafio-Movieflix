@@ -33,7 +33,6 @@ const Login = () => {
           authenticated: true,
           tokenData: getTokenData(),
         });
-        console.log('SUCESSO', response);
         history.push('/movies');
       })
       .catch((error) => {

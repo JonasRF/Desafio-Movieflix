@@ -1,24 +1,49 @@
 .base-card-movie-reviews {
-    margin-top: 29px;
-    margin-bottom: 20px;
-
+  margin-top: 29px;
+  margin-bottom: 20px;
 }
 
-@media(min-width: 576px){
+@media (min-width: 576px) {
+  .base-card-movie-reviews {
+    width: 536px;
+  }
+}
+
+@media (min-width: 768px) {
+  .base-card-movie-reviews {
+    width: 688px;
+    margin-left: 20px;
+    padding-top: 1px;
+    height: auto;
+    padding-bottom: 50px;
+    margin-bottom: 55px;
+    padding-left: 30px;
+  }
+}
+
+@media (min-width: 992px) {
+  .base-card-movie-reviews {
+    width: 912px;
+    padding-bottom: 50px;
+    margin-bottom: 55px;
+    padding-left: 33px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .base-card-movie-reviews {
+    width: 1120px;
+    padding-bottom: 50px;
+    margin-bottom: 55px;
+    padding-left: 33px;
+  }
+}
+
+@media (min-width: 1400px) {
     .base-card-movie-reviews {
-        width: 555px;
+      width: 1120px;
+      padding-bottom: 50px;
+      margin-bottom: 55px;
     }
-}
-
-@media(min-width: 768px){
-    .base-card-movie-reviews {
-        width: 747px;
-    }
-}
-
-@media(min-width: 992px){
-    .base-card-movie-reviews {
-        width: auto;
-        margin-right: 15px;
-    }
-}
+  }
+  

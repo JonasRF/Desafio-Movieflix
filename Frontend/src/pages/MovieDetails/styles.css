@@ -6,6 +6,7 @@
   mix-blend-mode: normal;
   margin-top: 17px;
   padding-left: 10px;
+  margin-bottom: 40px;
 }
 
 .card-movie-details {
@@ -61,4 +62,134 @@
   padding: 13px;
   padding-bottom: 0;
   text-align: justify;
+}
+
+@media (min-width: 576px) {
+  .movie-details-container {
+    width: 536px;
+  }
+
+  .card-movie-details {
+    width: 536px;
+  }
+
+  .card-movie-details img {
+    width: 525px;
+    height: 311px;
+  }
+
+  .card-movie-details-synopsis {
+    width: 496px;
+  }
+}
+
+@media (min-width: 768px) {
+  .movie-details-container {
+    margin-top: 40px;
+    margin-left: 10px;
+  }
+
+  .card-movie-details {
+    width: 688px;
+    margin-left: 20px;
+  }
+
+  .card-movie-details img {
+    width: 608px;
+    height: 382px;
+    margin-left: 40px;
+    margin-top: 40px;
+  }
+
+  .card-movie-details-title {
+    margin-left: 50px;
+    font-size: 36px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+
+  .card-movie-details-year {
+    margin-left: 50px;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .card-movie-details-subtitle {
+    margin-left: 50px;
+    font-size: 24px;
+    margin-bottom: 39px;
+  }
+
+  .card-movie-details-synopsis {
+    width: 590px;
+    margin-left: 48px;
+    margin-bottom: 34px;
+    padding-top: 1px;
+  }
+}
+
+@media (min-width: 992px) {
+  .card-movie-details {
+    width: 912px;
+  }
+
+  .card-movie-details img {
+    margin-left: 152px;
+  }
+
+  .card-movie-details-synopsis {
+    width: 832px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .card-movie-details {
+    display: flex;
+    width: 1120px;
+    margin-top: 40px;
+  }
+
+  .card-movie-details img {
+    width: 500px;
+    height: 314px;
+    margin-left: 40px;
+  }
+
+  .card-movie-details-subtitle {
+    margin-bottom: 28px;
+  }
+
+  .card-movie-title-year-subtitle {
+    margin-top: 50px;
+  }
+
+  .card-movie-details-synopsis {
+    width: 500px;
+    height: auto;
+  }
+}
+
+@media (min-width: 1400px) {
+  .movie-details-container {
+    padding-left: 134px;
+  }
+
+  .card-movie-details img {
+    width: 500px;
+    height: 314px;
+    margin-left: 40px;
+  }
+
+  .card-movie-details-subtitle {
+    margin-bottom: 28px;
+  }
+
+  .card-movie-title-year-subtitle {
+    margin-top: 50px;
+  }
+
+  .card-movie-details-synopsis {
+    width: 500px;
+    height: auto;
+  }
 }
