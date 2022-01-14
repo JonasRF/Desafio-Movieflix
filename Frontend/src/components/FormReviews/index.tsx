@@ -36,7 +36,7 @@ const FormReviews = ( { onSubmitForm } : Props) => {
         onSubmitForm(response.data)
       })
       .catch(() => {
-        toast.error('Erro ao ao cadastrar avaliação do fime!');
+        toast.error('Erro ao cadastrar avaliação do fime!');
       })
       ;
     }   
