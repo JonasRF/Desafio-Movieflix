@@ -17,8 +17,8 @@ type ControlComponentData = {
 const Movies = () => {
   const [page, setPage] = useState<SpringPage<Movie>>();
 
- //Controle de componentes
-  const [ controlComponentData, setcontrolComponentData ] = useState<ControlComponentData>(
+  //Controle de componentes
+  const [controlComponentData, setcontrolComponentData] = useState<ControlComponentData>(
     {
       activepage: 0,
       filterData: { genre: null }
@@ -26,12 +26,12 @@ const Movies = () => {
   );
 
   const handlePageChange = (pageNumber: number) => {
-    setcontrolComponentData({ activepage: pageNumber, filterData: controlComponentData.filterData})
+    setcontrolComponentData({ activepage: pageNumber, filterData: controlComponentData.filterData })
   }
 
   //Envento para filtrar lista de filmes paginada por genero
   const handleSelectFilter = (data: MovieFilterData) => {
-    setcontrolComponentData({activepage: 0, filterData: data})
+    setcontrolComponentData({ activepage: 0, filterData: data })
   }
 
   const getMovies = useCallback(() => {
@@ -48,7 +48,7 @@ const Movies = () => {
     requestBackend(params).then((response) => {
       setPage(response.data);
     });
-  },[controlComponentData]);
+  }, [controlComponentData]);
 
   useEffect(() => {
     getMovies();
@@ -57,7 +57,7 @@ const Movies = () => {
   return (
     <>
       <div className="container my-4 container-movie">
-        <GenreFilter onSelectFilter={handleSelectFilter}/>
+        <GenreFilter onSelectFilter={handleSelectFilter} />
         <div className="row link-details-movie">
           {page?.content.map((movie) => (
             <div className="col-sm-6 col-lg-6 col-xl-3" key={movie.id}>
@@ -68,11 +68,11 @@ const Movies = () => {
           ))}
         </div>
         <div className="row">
-        <Pagination 
-        pageCount={(page) ? page.totalPages : 0}
-        range={(page) ? page.size : 0}
-        onChange={handlePageChange}
-        />
+          <Pagination
+            pageCount={(page) ? page.totalPages : 0}
+            range={(page) ? page.size : 0}
+            onChange={handlePageChange}
+          />
         </div>
       </div>
     </>
