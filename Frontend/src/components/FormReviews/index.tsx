@@ -13,54 +13,59 @@ type UrlParams = {
 };
 
 type Props = {
-  onSubmitForm : (data: UrlParams) => void;
+  onSubmitForm: (data: UrlParams) => void;
 }
 
-const FormReviews = ( { onSubmitForm } : Props) => {
- 
+const FormReviews = ({ onSubmitForm }: Props) => {
+
   const { movieId } = useParams<UrlParams>();
 
-    const { register, handleSubmit, formState: { errors } } = useForm<Review>();
+  const { register, handleSubmit, setValue, formState: { errors } } = useForm<Review>();
 
-     const onSubmit = (formData: UrlParams) => {
+  const handleFormClear = () => {
+    setValue('text', '');
+  }
 
-      const config: AxiosRequestConfig = {
-        method:'POST',
-        url:`/reviews/${movieId}`,
-        data: formData,
-        withCredentials: true
+  const onSubmit = (formData: UrlParams) => {
+
+    const config: AxiosRequestConfig = {
+      method: 'POST',
+      url: `/reviews/${movieId}`,
+      data: formData,
+      withCredentials: true
     };
-     requestBackend(config)
+    requestBackend(config)
       .then((response) => {
         toast.info('Avaliação do filme cadastrada com sucesso!');
+        handleFormClear();
         onSubmitForm(response.data)
       })
       .catch(() => {
-        toast.error('Erro ao cadastrar avaliação do fime!');
+        toast.error('Erro ao cadastrar avaliação do filme!');
       })
       ;
-    }   
-    
-     return( 
-        <div className="base-card base-card-form">
-          <form onSubmit={handleSubmit(onSubmit)}>
-            <div className="mb-4">
-              <input
+  }
+
+  return (
+    <div className="base-card base-card-form">
+      <form onSubmit={handleSubmit(onSubmit)}>
+        <div className="mb-4">
+          <input
             {...register('text', {
               required: "Campo não pode ficar em branco!",
             })}
-                type="text"
-                className={`form-control base-input-form ${errors.text ? 'is-invalid': ''}`}
-                placeholder="Deixe sua avaliação aqui"
-                name="text"
-              />
-            </div>
-            <div className="invalid-feedback d-block base-card-invalid-feedback">{errors.text?.message}</div>
-            <div>
-              <ButtonReview text="SALVAR AVALIAÇÃO" />
-            </div>
-          </form>
+            type="text"
+            className={`form-control base-input-form ${errors.text ? 'is-invalid' : ''}`}
+            placeholder="Deixe sua avaliação aqui"
+            name="text"
+          />
         </div>
-     );
+        <div className="invalid-feedback d-block base-card-invalid-feedback">{errors.text?.message}</div>
+        <div>
+          <ButtonReview text="SALVAR AVALIAÇÃO" />
+        </div>
+      </form>
+    </div>
+  );
 }
 export default FormReviews;

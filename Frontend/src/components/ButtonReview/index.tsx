@@ -4,13 +4,13 @@ type Props = {
     text: string;
 }
 
-const ButtonReview = ( { text } : Props) => {
-    return(
-            <div>
-                <button className="btn button-card">
-                    <h4>{text}</h4>
-                </button>
-            </div>
+const ButtonReview = ({ text }: Props) => {
+    return (
+        <div>
+            <button className="btn button-card">
+                <h4>{text}</h4>
+            </button>
+        </div>
     );
 }
 export default ButtonReview;
