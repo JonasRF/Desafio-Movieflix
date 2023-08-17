@@ -12,19 +12,4 @@ Aplicando fundamentos de Docker, imagens e containers, Docker Hub, realizar buil
 
 ´´´
 
-Desafio para entregar
-TAREFA: MovieFlix domínio e autorização
-
-Implemente as funcionalidades necessárias para que os testes do projeto abaixo passem:
-https://github.com/devsuperior/bds05
-
-Visão geral do sistema MovieFlix
-Atenção: esta descrição é somente para que você compreenda o que é o sistema. Para esta tarefa basta fazer o estritamente necessário para os testes passarem, que será explicado mais adiante.
-Protótipos de tela
-https://www.figma.com/file/qmduL2GXrMrqRLyFjFCk56/MovieFlix-web
-
-O sistema MovieFlix consiste em um banco de filmes, os quais podem ser listados e avaliados pelos usuários. Usuários podem ser visitantes (VISITOR) e membros (MEMBER). Apenas usuários membros podem inserir avaliações no sistema.
-
-Ao acessar o sistema, o usuário deve fazer seu login. Apenas usuários logados podem navegar nos filmes. Logo após fazer o login, o usuário vai para a listagem de filmes, que mostra os filmes de forma paginada, ordenados alfabeticamente por título. O usuário pode filtrar os filmes por gênero.
-
-Ao selecionar um filme da listagem, é mostrada uma página de detalhes, onde é possível ver todas informações do filme, e também suas avaliações. Se o usuário for MEMBER, ele pode ainda registrar uma avaliação nessa tela.
+![image](https://github.com/JonasRF/Desafio-Movieflix/assets/77034798/a65b9ce4-aa99-4b31-88aa-0398400e59e1)
