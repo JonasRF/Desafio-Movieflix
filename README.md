@@ -10,7 +10,7 @@ autenticação e autorização com OAuth2 e JWT, implementar um modelo conceitua
 Criar autorizações customizadas: em nível de serviço, conteúdo customizado para o usuário logado, refresh token, pré-autorização de métodos. Realizar consultas ao banco de dados com JPA e JPQL, problema das N+1 consultas, consultas nativas com SQL. 
 Aplicando fundamentos de Docker, imagens e containers, Docker Hub, realizar build e implantação manual de um projeto Spring Boot na AWS, CI/CD com Heroku, AWS e Github Actions.
 
-```
+´´´
 
 Desafio para entregar
 TAREFA: MovieFlix domínio e autorização
